@@ -164,11 +164,24 @@
         position: relative;
         top: 1000px;
         bottom: 0px;
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-        height: 800px;
+        width: 45%;
+        margin-left: 1%;
+        margin-right: 2%;
+        height: 750px;
         background-color: rgb(87, 69, 42);
+        margin-left:auto; 
+        right:5px;
+    }
+    #heatmap{
+      position: relative;
+        top: 250px;
+        bottom: 0px;
+        width: 50%;
+        margin-left: 2%;
+        margin-right: 1%;
+        height: 750px;
+        background-color: rgb(87, 69, 42);
+
     }
       .mapboxgl-popup {
           max-width: 400px;
@@ -200,6 +213,7 @@
     </div>
     <div class="map-overlay3" id="legend3"></div>
     <div id="ballotBoxesMap"></div>
+    <div id="heatmap"></div>
 
 
 
@@ -423,7 +437,7 @@
           container: 'ballotBoxesMap',
             style: 'mapbox://styles/lilylou/ckgvoe5xc17u919m9x7ywisnn',
             center: [-111.993129, 34.246049],
-            zoom: 6
+            zoom: 5.7
         });
         ballotboxes.on('click', 'ballotboxes', function (e) {
             new mapboxgl.Popup()
@@ -461,7 +475,15 @@
             });
 
 
-            ballotboxes.addControl(new mapboxgl.ScaleControl({position: 'bottom-right'}));
+            ballotboxes.addControl(new mapboxgl.ScaleControl({position: 'top-right'}));
+
+            var heatmap = new mapboxgl.Map({
+                container: 'heatmap', // container id
+                style: 'mapbox://styles/lilylou/ckgzzaq2r1jzf19oaomahnmtf', // map style URL from Mapbox Studio
+                center: [-111.993129, 34.246049],
+                zoom: 5.7
+
+      });
 
 
 
