@@ -16,6 +16,17 @@
         margin: 0;
         padding: 0;
       }
+      h1 {
+        margin: 10px;
+        font-size: 1.5em;
+        font-family: Arial, sans-serif;
+      }
+      .mainText {
+        text-align: center;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding-top: 5%;
+      }
       h2,
       h3 {
         margin: 10px;
@@ -28,7 +39,36 @@
         font-size: 0.85em;
         margin: 10px;
         text-align: left;
+        font-family: Arial, sans-serif;
+
       }
+      .map-overlay0 {
+        position: absolute;
+        bottom: 40px;
+        right: 0;
+        background: rgba(255, 255, 255, 0.8);
+        margin-right: 100px;
+        margin-bottom: 300px;
+
+        font-family: Arial, sans-serif;
+        overflow: auto;
+        border-radius: 3px;
+      }
+
+      .map-overlay-turnout {
+        position: absolute;
+        bottom: -1221px;
+        right: 0;
+        background: rgba(255, 255, 255, 0.8);
+        margin-right: 100px;
+        margin-bottom: 300px;
+
+        font-family: Arial, sans-serif;
+        overflow: auto;
+        border-radius: 3px;
+      }
+
+
       .map-overlay {
         position: absolute;
         bottom: 40px;
@@ -43,7 +83,7 @@
       }
       .map-overlay2 {
         position: absolute;
-        bottom: -800px;;
+        bottom: -2300px;;
         right: 0;
         background: rgba(255, 255, 255, 0.8);
         margin-right: 100px;
@@ -55,7 +95,7 @@
       }
       .map-overlay3 {
         position: absolute;
-        bottom: -1720px;
+        bottom: -3220px;
         right: 0;
         background: rgba(255, 255, 255, 0.8);
         margin-right: 100px;
@@ -65,56 +105,101 @@
         overflow: auto;
         border-radius: 3px;
       }
-
-      #map {
+      #polpartymap {
         position: absolute;
-        top: 50px;
+        top: 408px;
         bottom: 50px;
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
+        height: 750px;
       }
+
+      #map {
+        position: absolute;
+        top: 2073px;
+        bottom: 50px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 750px;
+
+      }
+      #voterturnoutmap {
+        position: absolute;
+        top: 1230px;
+        bottom: 50px;
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+        height: 750px;
+
+      }
+
       #mapdeadline {
         position: relative;
-        top: 800px;
+        top: 2300px;
         bottom: 0px;
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
         height: 800px;
-        background-color: rgb(87, 69, 42);
       }
       #mailinpercent {
         position: relative;
-        top: 900px;
+        top: 2400px;
         bottom: 0px;
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
         height: 800px;
-        background-color: rgb(87, 69, 42);
+      }
+
+      #features-turnout {
+        top: 1249px;
+        height: 143px;
+        margin-top: 20px;
+        margin-bottom: 3px;
+        width: 250px;
+      }
+
+      #features0 {
+        top: 411px;
+        height: 143px;
+        margin-top: 20px;
+        margin-bottom: 3px;
+        width: 250px;
       }
 
       #features {
-        top: 50px;
+        top: 1550px;
         height: 110px;
         margin-top: 20px;
         margin-bottom: 3px;
         width: 250px;
       }
       #featuresMailIn {
-        top: 800px;
+        top: 2300px;
         height: 130px;
         margin-top: 20px;
         margin-bottom: 3px;
         width: 250px;
       }
       #features3 {
-        top: 1738px;
+        top: 3238px;
         height: 130px;
         margin-top: 20px;
         margin-bottom: 3px;
         width: 250px;
+      }
+
+      #legend0 {
+        padding: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        line-height: 18px;
+        height: 32px;
+        margin-bottom: -400px;
+        width: 100px;
       }
 
       #legend {
@@ -122,7 +207,7 @@
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
         line-height: 18px;
         height: 87px;
-        margin-bottom: 40px;
+        margin-bottom: -1013px;
         width: 100px;
       }
       #legend2 {
@@ -141,8 +226,16 @@
         margin-bottom: 40px;
         width: 100px;
       }
+      #legendTurnout {
+        padding: 10px;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+        line-height: 18px;
+        height: 70px;
+        margin-bottom: 40px;
+        width: 100px;
+      }
 
-      
+
       .legend-key {
         display: inline-block;
         border-radius: 20%;
@@ -150,6 +243,10 @@
         height: 10px;
         margin-right: 5px;
       }
+      #pd0 {
+          font-size: 12px;
+      }
+
       #pd {
           font-size: 12px;
       }
@@ -159,29 +256,30 @@
       #pd3 {
           font-size: 12px;
       }
+      #pd-turnout {
+          font-size: 12px;
+      }
+
 
       #ballotBoxesMap { 
         position: relative;
-        top: 1000px;
+        top: 2500px;
         bottom: 0px;
         width: 45%;
         margin-left: 1%;
         margin-right: 2%;
         height: 750px;
-        background-color: rgb(87, 69, 42);
         margin-left:auto; 
         right:5px;
     }
     #heatmap{
       position: relative;
-        top: 250px;
+        top: 1750px;
         bottom: 0px;
         width: 50%;
         margin-left: 2%;
         margin-right: 1%;
         height: 750px;
-        background-color: rgb(87, 69, 42);
-
     }
       .mapboxgl-popup {
           max-width: 400px;
@@ -192,13 +290,47 @@
     </style>
   </head>
   <body>
+    <div class="mainText">
+    <h1>Voting in Arizona and Navajo Nation</h1>
+    <p></br></p>
+    <p>Despite being a historically republican state (a democratic presidential candidate last won Arizona in 1996 and, prior to that, 1952), Arizona has been a battleground state for this year’s presidential election, leading to many lawsuits over counting ballots, both before and after results were called.
+    </p>
+    <p>
+      Most of Arizona is rural, with the majority of its population living in Phoenix and Tucson. For many news outlets, the declared winner Arizona’s electoral votes hinged on last minute mail-in ballots from Maricopa County, <a href="https://twitter.com/Nate_Cohn/status/1324174544169553922">where many of the later mail-in votes leaned towards Trump</a> (The Associated Press and Fox News had called Arizona for Biden prior to this).
+    </p>
+    <p>
+      Arizona is also home to 21 American Indian tribes, including the Navajo, who have the largest on-reservation population in the United States, spanning 27,000 square miles between Arizona, New Mexico, and Utah, and larger than the size of West Virginia. 
+    </p>
+    <p>
+      In August, <a href="https://www.azcentral.com/story/news/politics/arizona/2020/08/26/navajo-voters-file-suit-force-count-mail-ballots-arrive-late/5640034002/">a group of Navajo Nation citizens</a> filed <a href="http://www.fourdirectionsvote.com/wp-content/uploads/2020/08/signed-Complaint.pdf">a lawsuit</a> against Arizona, asking Arizona election officials to count ballots postmarked before Nov. 3 and delivered up to 10 days after Election Day from tribal members living on reservations.The plaintiffs cited unequal access to postal services, limited transportation, mail delays, and other hurdles to voting in violation of the Voting Rights Act. Mail can take weeks to arrive in Navajo Nation — there are only 27 postal locations in the 18,000 square miles of its Arizona portion. 
+    </p>
+    <p>
+    However, courts ruled in favor of not extending deadlines, arguing that there was no proof that Navajo Nation was affected more than other rural areas outside of the reservation. There are 67,000 eligible Navajo voters in Arizona, and Navajo Nation has historically voted more blue than the rest of Arizona. Navajo County's population is 43% Native American, and neighboring Apache County is 73% Native American.
+    </p>
+    </div>
+    <div id="polpartymap"></div>
+    <div class="map-overlay0" id="features0">
+      <h2>2016 Presidential Election by Political Party</h2>
+      <div id="pd0"><p>Data from <a href="https://www.mapbox.com/elections/tilesets">Mapbox</a>.</p></div>
+      <div class="map-overlay0" id="legend0"></div>
+
+    </div>
+    <!--turnout map-->
+    <div id="voterturnoutmap"></div>
+    <div class="map-overlay-turnout" id="features-turnout">
+      <h2>2018 Voter Turnout by County</h2>
+      <div id="pd-turnout"><p>Data from <a href="https://www.eac.gov/research-and-data/datasets-codebooks-and-surveys">U.S. Election Assistance Commission</a> and the US Census Buerau.</p></div>
+    </div>
+    <div class="map-overlay-turnout" id="legendTurnout"></div>
+
+<!--second map-->
     <div id="map"></div>
     <div class="map-overlay" id="features">
       <h2>Mail-In Ballot Rejection Rates</h2>
       <div id="pd"><p>Data from <a href="https://www.eac.gov/research-and-data/datasets-codebooks-and-surveys">U.S. Election Assistance Commission</a> and the US Census Buerau.</p></div>
     </div>
     <div class="map-overlay" id="legend"></div>
-    <!-- second map -->
+    <!-- third map -->
     <div id="mapdeadline"></div>
     <div class="map-overlay2" id="featuresMailIn">
       <h2>Missed Deadline Mail-In Ballot Rejection Rates</h2>
@@ -290,6 +422,124 @@
           } else {
             document.getElementById('pd').innerHTML =
             '<p>Hover over a county!</p><p>Data from <a href="https://www.eac.gov/research-and-data/datasets-codebooks-and-surveys">U.S. Election Assistance Commission</a> and the US Census Bureau.</p>';
+          }
+        });
+
+        var polparty = new mapboxgl.Map({
+        container: 'polpartymap', // container id
+        style: 'mapbox://styles/lilylou/ckh5u180w0c7j19obw0t32dnt' // map style URL from Mapbox Studio
+      });
+
+        // make a pointer cursor
+        polparty.getCanvas().style.cursor = 'default';
+
+        // set map bounds to the continental US
+        // make a pointer cursor
+        polparty.getCanvas().style.cursor = 'default';
+
+        var layers = [
+          'Democratic',
+          'Republican'
+        ];
+        var colors = [
+          '#0a27ff',
+          '#ff0000'
+        ];
+
+
+        // create legend
+        for (i = 0; i < layers.length; i++) {
+          var layer = layers[i];
+          var color = colors[i];
+          var item = document.createElement('div');
+          var key = document.createElement('span');
+          key.className = 'legend-key';
+          key.style.backgroundColor = color;
+
+          var value = document.createElement('span');
+          value.innerHTML = layer;
+          item.appendChild(key);
+          item.appendChild(value);
+          legend0.appendChild(item);
+        }
+
+        // change info window on hover
+        polparty.on('mousemove', function(e) {
+          var rejectionrate = polparty.queryRenderedFeatures(e.point, {
+            layers: ['historical-pres-elections-county']
+          });
+
+          if (rejectionrate.length > 0) {
+            document.getElementById('pd0').innerHTML =
+              '<h3><strong>' +
+                rejectionrate[0].properties.name +
+              ' County</strong></h3><p><b>' +
+                rejectionrate[0].properties["2016_mov_pct"] +
+              ' %</b> margin of victory (' + 
+              rejectionrate[0].properties["2016_mov_count"] + 
+              ' more votes cast for the winning party).</p>';
+          } else {
+            document.getElementById('pd0').innerHTML =
+            '<p>Hover over a county!</p><p>Data from <a href="https://www.mapbox.com/elections/tilesets">Mapbox</a>.</p>';
+          }
+        });
+
+        var turnout = new mapboxgl.Map({
+        container: 'voterturnoutmap', // container id
+        style: 'mapbox://styles/lilylou/ckh9xnarb0b9619nzcvr8qgcj' // map style URL from Mapbox Studio
+      });
+              // make a pointer cursor
+              turnout.getCanvas().style.cursor = 'default';
+
+// set map bounds to the continental US
+// make a pointer cursor
+turnout.getCanvas().style.cursor = 'default';
+
+var layers = [
+  '75%',
+  '80%',
+  '85%',
+  '90+%'
+];
+var colors = [
+  '#9ee4ff',
+  '#00b7ff',
+  '#0283b6',
+  '#00121a'
+];
+
+        // create legend
+        for (i = 0; i < layers.length; i++) {
+          var layer = layers[i];
+          var color = colors[i];
+          var item = document.createElement('div');
+          var key = document.createElement('span');
+          key.className = 'legend-key';
+          key.style.backgroundColor = color;
+
+          var value = document.createElement('span');
+          value.innerHTML = layer;
+          item.appendChild(key);
+          item.appendChild(value);
+          legendTurnout.appendChild(item);
+        }
+
+        // change info window on hover
+        turnout.on('mousemove', function(e) {
+          var rejectionrate = turnout.queryRenderedFeatures(e.point, {
+            layers: ['turnout']
+          });
+
+          if (rejectionrate.length > 0) {
+            document.getElementById('pd-turnout').innerHTML =
+              '<h3><strong>' +
+                rejectionrate[0].properties.NAME +
+              ' County</strong></h3><p><b>' +
+                rejectionrate[0].properties.VOTERTURNOUT +
+              ' %</b> voter turnout</p>';
+          } else {
+            document.getElementById('pd-turnout').innerHTML =
+            '<p>Hover over a county!</p><p>Data from <a href="https://www.mapbox.com/elections/tilesets">Mapbox</a>.</p>';
           }
         });
 
@@ -484,6 +734,7 @@
                 zoom: 5.7
 
       });
+      heatmap.addControl(new mapboxgl.ScaleControl({position: 'top-right'}));
 
 
 
