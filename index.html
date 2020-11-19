@@ -27,6 +27,23 @@
         margin-right: 5%;
         padding-top: 5%;
       }
+      #secondtext{
+        position: absolute;
+        top: 1901px;
+      }
+      #thirdsection {
+        position: absolute;
+        top: 2860px;
+      }
+      #fourthsection {
+        top: 3663px;
+        position: absolute;
+      }
+      #fifthsection {
+        top: 4428px;
+        position: absolute;
+      }
+
       h2,
       h3 {
         margin: 10px;
@@ -44,7 +61,7 @@
       }
       .map-overlay0 {
         position: absolute;
-        bottom: 40px;
+        bottom: 673px;
         right: 0;
         background: rgba(255, 255, 255, 0.8);
         margin-right: 100px;
@@ -57,7 +74,7 @@
 
       .map-overlay-turnout {
         position: absolute;
-        bottom: -1221px;
+        bottom: -1173px;
         right: 0;
         background: rgba(255, 255, 255, 0.8);
         margin-right: 100px;
@@ -73,6 +90,7 @@
         position: absolute;
         bottom: 40px;
         right: 0;
+        top: 3473px;
         background: rgba(255, 255, 255, 0.8);
         margin-right: 100px;
         margin-bottom: 300px;
@@ -83,7 +101,7 @@
       }
       .map-overlay2 {
         position: absolute;
-        bottom: -2300px;;
+        bottom: -3673px;
         right: 0;
         background: rgba(255, 255, 255, 0.8);
         margin-right: 100px;
@@ -95,7 +113,7 @@
       }
       .map-overlay3 {
         position: absolute;
-        bottom: -3220px;
+        bottom: -2075px;
         right: 0;
         background: rgba(255, 255, 255, 0.8);
         margin-right: 100px;
@@ -117,7 +135,7 @@
 
       #map {
         position: absolute;
-        top: 2073px;
+        top: 2920px;
         bottom: 50px;
         width: 90%;
         margin-left: 5%;
@@ -127,7 +145,7 @@
       }
       #voterturnoutmap {
         position: absolute;
-        top: 1230px;
+        top: 1199px;
         bottom: 50px;
         width: 90%;
         margin-left: 5%;
@@ -138,16 +156,16 @@
 
       #mapdeadline {
         position: relative;
-        top: 2300px;
+        top: 3223px;
         bottom: 0px;
         width: 90%;
         margin-left: 5%;
         margin-right: 5%;
-        height: 800px;
+        height: 750px;
       }
       #mailinpercent {
         position: relative;
-        top: 2400px;
+        top: 809px;
         bottom: 0px;
         width: 90%;
         margin-left: 5%;
@@ -156,7 +174,7 @@
       }
 
       #features-turnout {
-        top: 1249px;
+        top: 1220px;
         height: 143px;
         margin-top: 20px;
         margin-bottom: 3px;
@@ -164,7 +182,7 @@
       }
 
       #features0 {
-        top: 411px;
+        top: 437px;
         height: 143px;
         margin-top: 20px;
         margin-bottom: 3px;
@@ -172,21 +190,21 @@
       }
 
       #features {
-        top: 1550px;
+        top: 2954px;
         height: 110px;
         margin-top: 20px;
         margin-bottom: 3px;
         width: 250px;
       }
       #featuresMailIn {
-        top: 2300px;
+        top: 3743px;
         height: 130px;
         margin-top: 20px;
         margin-bottom: 3px;
         width: 250px;
       }
       #features3 {
-        top: 3238px;
+        top: 2078px;
         height: 130px;
         margin-top: 20px;
         margin-bottom: 3px;
@@ -198,8 +216,9 @@
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
         line-height: 18px;
         height: 32px;
-        margin-bottom: -400px;
+        margin-bottom: -1013px;
         width: 100px;
+        z-index: 7;
       }
 
       #legend {
@@ -207,7 +226,7 @@
         box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
         line-height: 18px;
         height: 87px;
-        margin-bottom: -1013px;
+        margin-bottom: -2050px;
         width: 100px;
       }
       #legend2 {
@@ -263,7 +282,7 @@
 
       #ballotBoxesMap { 
         position: relative;
-        top: 2500px;
+        top: 2550px;
         bottom: 0px;
         width: 45%;
         margin-left: 1%;
@@ -274,7 +293,7 @@
     }
     #heatmap{
       position: relative;
-        top: 1750px;
+        top: 1800px;
         bottom: 0px;
         width: 50%;
         margin-left: 2%;
@@ -284,6 +303,26 @@
       .mapboxgl-popup {
           max-width: 400px;
           font: 12px/20px 'Helvetica Neue', Arial, Helvetica, sans-serif;
+      }
+
+      @media only screen and (min-width: 2048px) {
+        body {
+          margin-left: 5%;
+          margin-right: 5%;
+        }
+        #map {
+          width: 80%;
+        }
+        #polpartymap {
+          top: 441px;
+          width: 80%;
+        }
+        #voterturnoutmap {
+          width: 80%;
+        }
+        #mapdeadline {
+          width: 80%;
+        }
       }
 
 
@@ -312,9 +351,9 @@
     <div class="map-overlay0" id="features0">
       <h2>2016 Presidential Election by Political Party</h2>
       <div id="pd0"><p>Data from <a href="https://www.mapbox.com/elections/tilesets">Mapbox</a>.</p></div>
-      <div class="map-overlay0" id="legend0"></div>
-
     </div>
+    <div class="map-overlay0" id="legend0"></div>
+
     <!--turnout map-->
     <div id="voterturnoutmap"></div>
     <div class="map-overlay-turnout" id="features-turnout">
@@ -322,15 +361,28 @@
       <div id="pd-turnout"><p>Data from <a href="https://www.eac.gov/research-and-data/datasets-codebooks-and-surveys">U.S. Election Assistance Commission</a> and the US Census Buerau.</p></div>
     </div>
     <div class="map-overlay-turnout" id="legendTurnout"></div>
-
-<!--second map-->
+<!--text-->
+<div id="secondtext" class="mainText">
+  <p>Mail-in ballots have been the most common form of voting in Arizona, with a majority of counties getting more than 70% of their votes by mail in 2018. Arizona allows voters to sign up for <a href="https://azsos.gov/votebymail">a program</a> that automatically sends voters a ballot-by-mail for all elections they can vote in. However, vote by mail is lowest in Apache County and Navajo County, two of the three counties where Navajo Nation resides. In Navajo County, 43% of voters voted in person, with 40.7% voting in person on election day. Similarly, in Apache County, 52.58% of voters voted in person on election day in the 2018 general elections.</p>
+  <br>
+</div>
+<!--third map-->
     <div id="map"></div>
     <div class="map-overlay" id="features">
       <h2>Mail-In Ballot Rejection Rates</h2>
       <div id="pd"><p>Data from <a href="https://www.eac.gov/research-and-data/datasets-codebooks-and-surveys">U.S. Election Assistance Commission</a> and the US Census Buerau.</p></div>
     </div>
     <div class="map-overlay" id="legend"></div>
-    <!-- third map -->
+  <div class="mainText">
+    <p id="thirdsection">In Arizona, the rejection rate for mail in ballots ranged from 0.01% to 4%. Rates were low in 2018 for Coconino and Navajo Counties but relatively high for Apache County, which voted by mail less than all over Arizona counties. 
+    </p>
+  </div>
+  <div class="mainText">
+    <p id="fourthsection"><br>While Navajo County had the lowest mail-in ballot rejection rates in the state in 2018, it had one of the largest percentages of votes be rejected due to late deadlines.    
+    </p>
+  </div>
+
+    <!-- fourth map -->
     <div id="mapdeadline"></div>
     <div class="map-overlay2" id="featuresMailIn">
       <h2>Missed Deadline Mail-In Ballot Rejection Rates</h2>
@@ -344,11 +396,13 @@
       <div id="pd3"><p>Data from <a href="https://www.eac.gov/research-and-data/datasets-codebooks-and-surveys">U.S. Election Assistance Commission</a> and the US Census Buerau.</p></div>
     </div>
     <div class="map-overlay3" id="legend3"></div>
+    <div class="mainText" id="fifthsection">
+      <p>Though mail in ballots can be stamped and mailed out, dropboxes have become increasingly popular for collecting mail-in votes and ensuring that votes arrive on time. However, no dropboxes were placed in Tohono Oʼodham Nation in 2020 and there were only 5 polling locations there in 2018. Most of Arizona’s voting locations, such as polling locations or dropboxes, are in areas near Tucson and Phoenix. 
+      </p>
+      <p>(click icons in right map for more information on locations)</p>
+    </div>
     <div id="ballotBoxesMap"></div>
     <div id="heatmap"></div>
-
-
-
     <script>
       function titleCase(str) {
         return str.toLowerCase().split(' ').map(function(word) {
